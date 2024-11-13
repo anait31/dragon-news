@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import DragonNews from "../Shared/DragonNews/DragonNews";
 import Header from "../Shared/Header/Header";
 import LeftNav from "../Shared/LeftNav/LeftNav";
@@ -14,7 +15,7 @@ const Home = () => {
                     <LeftNav></LeftNav>
                 </div>
                 <div className="md:col-span-2">
-                    <DragonNews></DragonNews>
+                    <Outlet></Outlet>
                 </div>
                 <div className="">
                     <RightNAv></RightNAv>
