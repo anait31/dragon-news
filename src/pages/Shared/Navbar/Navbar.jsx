@@ -21,8 +21,8 @@ const Navbar = () => {
             </div>
             <div className="space-x-4 text-xl">
                 <Link to={'/'}>Home</Link>
-                <Link>About</Link>
-                <Link>Career</Link>
+                <Link to={'/about'}>About</Link>
+                <Link to={'/career'}>Career</Link>
             </div>
             <div className="flex items-center gap-2">
                 {

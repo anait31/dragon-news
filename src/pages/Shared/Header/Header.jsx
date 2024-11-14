@@ -11,7 +11,7 @@ const Header = () => {
             <p>{moment().format("dddd, MMMM Do YYYY")}</p>
             <div className='flex bg-slate-200 rounded-r-md'>
                 <button className='bg-pink-700 text-white px-4 py-2 rounded-l-md'>Latest</button>
-                <Marquee>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, ipsa?</Marquee>
+                <Marquee>Biden Pledges Nearly $3 Billion To Ukraine In Largest U.S. Military Aid Package Yet || Biden announces $3 billion Ukraine military aid package on its Independence Day || U.S. concerned about Indias participation in Russia military exercises</Marquee>
             </div>
         </div>
     );
