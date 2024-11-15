@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 
 import { FaShareAlt, FaRegBookmark, FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 const NewsCard = ({ news }) => {
     // eslint-disable-next-line react/prop-types
-    const { title, author, rating, total_view, thumbnail_url, details } = news;
+    const { _id, title, author, rating, total_view, thumbnail_url, details } = news;
 
     return (
         <div className="card bg-white shadow-md rounded-lg p-4">
@@ -36,7 +37,7 @@ const NewsCard = ({ news }) => {
 
             <p className="mt-3 text-gray-600 text-sm">
                 {details.slice(0, 100)}...
-                <span className="text-blue-500 cursor-pointer">Read More</span>
+                <Link to={`/news/${_id}`} className="text-blue-500 cursor-pointer">Read More</Link>
             </p>
 
             <div className="flex justify-between items-center mt-4">
